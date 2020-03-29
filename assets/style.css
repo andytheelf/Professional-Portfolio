@@ -11,7 +11,7 @@ header {
  justify-content: space-between;
  flex-wrap: wrap;
  margin:0;
- padding: 10px 20px;
+ padding-left: 20px;
  background-position: 80%;
  
 }
@@ -46,6 +46,7 @@ header nav ul li a {
     border-bottom-style: dotted;
     margin-right: 20px;
 } 
+/*Header Ends*/
 
 /*Hero Section*/
 .hero {
@@ -55,16 +56,77 @@ header nav ul li a {
  justify-content: flex-end;
  flex-wrap: wrap;
  background-attachment: fixed;
+ flex-direction: column;
+ height: 600px;
+ opacity: .9;
+ z-index: 9999;
 }
 
 .hero-2 h2 {
     font-size: 36px;
-    text-align: left;
     padding: 0 20px 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    color: blanchedalmond;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color:  rgb(193, 195, 197);
+.hero-2 span {
+    color: rgb(21, 133, 133);
 }
+
+/*Hero Section Ends*/
+
+/*About Me*/
+
+.about-me-1 {
+    height: 400px;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+.personal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.personal p {
+    margin: 10px;
+    text-align: left;
+    padding: 25px;
+    border-left: 2px solid teal;
+    
+}
+
+.personal h3 {
+text-align: center;
+font-size: 40px;
+margin: 0;
+padding-right: 10px;
+}
+
+/*About Me Section Ends*/
+
+
+
+
+
+
+/*Footer Begins*/
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.contact-info h3 {
+  
+
+}
+
+
+
+
