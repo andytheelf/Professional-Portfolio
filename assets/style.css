@@ -100,13 +100,15 @@ header nav ul li a {
 }
 
 .personal h3 {
-text-align: center;
+text-align: right;
 font-size: 40px;
 margin: 0;
 padding-right: 10px;
 }
 
 /*About Me Section Ends*/
+
+/* Work Section*/
 
 
 
@@ -116,16 +118,33 @@ padding-right: 10px;
 /*Footer Begins*/
 
 .contact-info {
+    height: 400;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.contact {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    height: 300px;
+    flex-wrap: nowrap;
 }
 
-.contact-info h3 {
-  
 
+.contact h3 {
+  font-size: 35px;
+  margin: 10px;
+  text-align: right;
+  border-right: 2px solid teal;
+  padding: 10px;
 }
+
+.contact div a {
+    font-size: 25px;
+    color: teal;
+    padding: 0 80px;
+    margin: 10px;
+}
+
 
 
 
