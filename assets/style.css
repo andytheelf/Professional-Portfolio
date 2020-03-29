@@ -79,7 +79,6 @@ header nav ul li a {
 /*About Me*/
 
 .about-me-1 {
-    height: 400px;
     margin: 20px;
     padding: 15px;
 }
@@ -103,12 +102,83 @@ header nav ul li a {
 text-align: right;
 font-size: 40px;
 margin: 0;
-padding-right: 10px;
+padding-right: 5px;
 }
 
 /*About Me Section Ends*/
 
 /* Work Section*/
+
+.work-grid-container {
+  display: grid;
+  width: 75%;
+  grid-template-columns: 1fr repeat(5, 4fr);
+  grid-template-rows: repeat(3, 1fr) 1fr;
+  grid-gap: 10px
+}
+
+.work-grid-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-head {
+    font-size: 40px;
+    text-align: left;
+    border-right: 2px solid teal;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.project-1 {
+ font-size: 1.7rem;
+ writing-mode: vertical-lr;
+ transform: rotate(180deg);
+}
+
+.project {
+   border: 2px solid teal;
+   border-radius: 10px;
+   text-align: left;
+   font-size: 20px;
+   flex-direction: column;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.project h5, h6 {
+    margin: 0;
+}
+
+.project.run-buddy {
+    grid-column: 2 / span 6 ;
+}
+
+.project.exmp-2 {
+    grid-column: 2 / span 4;
+}
+
+.project.exmp-3 {
+    grid-column: 2 / span 3;
+}
+
+.project-1 {
+    grid-row: 1;
+}
+
+.project.exmp-4 {
+
+}
+
+.project.exmp-5 {
+    grid-column: 6 / span 2;
+    grid-row: 2 /span 2;
+}
+
+
+
+
+
 
 
 
@@ -119,8 +189,8 @@ padding-right: 10px;
 
 .contact-info {
     height: 400;
-    margin: 0 10px;
-    padding: 0 10px;
+    margin: 0 5px;
+    padding: 0 5px;
 }
 
 .contact {
@@ -131,7 +201,7 @@ padding-right: 10px;
 
 
 .contact h3 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 10px;
   text-align: right;
   border-right: 2px solid teal;
@@ -141,8 +211,10 @@ padding-right: 10px;
 .contact div a {
     font-size: 25px;
     color: teal;
-    padding: 0 80px;
-    margin: 10px;
+    padding: 0 85px;
+    margin: 7px 0;
+    text-align: left;
+    margin-top: 25px;
 }
 
 
