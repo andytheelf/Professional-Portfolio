@@ -324,6 +324,15 @@ padding-right: 5px;
     }
 }
 
+/*Pseudo Class*/
+
+
+
+a:hover {
+    opacity: .8;
+  }
+  
+
 
 
 
