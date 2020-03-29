@@ -113,8 +113,9 @@ padding-right: 5px;
   display: grid;
   width: 75%;
   grid-template-columns: 1fr repeat(5, 4fr);
-  grid-template-rows: repeat(3, 1fr) 1fr;
-  grid-gap: 10px
+  grid-template-rows: repeat(2, 1fr) 1fr;
+  grid-gap: 10px;
+  margin-bottom: 40px;
 }
 
 .work-grid-wrapper {
@@ -147,19 +148,22 @@ padding-right: 5px;
 }
 
 .project h5 {
-   font-size: 1rem;
+   font-size: 1.2rem;
+   padding-top: 60px;
    
 }
 
 .project h6 {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 
 
 .project h5, h6 {
     margin: 0;
-    color: teal;
+    color: rgb(80, 167, 167);
+    text-align: center;
+
 }
 
 .work-grid-container a, div, h5, h6 {
@@ -168,8 +172,8 @@ padding-right: 5px;
 
 .project.run-buddy {
     grid-column: 2 / span 6 ;
-    background-image: url(./images/runbuddy.png);
-    background-position: center;
+    background-image: url(./images/runbud.jpg.png);
+    background-position: top;
     background-size: cover;
 }
 
@@ -205,28 +209,19 @@ padding-right: 5px;
     background-size: cover;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*Footer Begins*/
 
 .contact-info {
-    height: 400;
-    margin: 0 5px;
-    padding: 0 5px;
+    height: 300;
+    margin: 10px;
+    padding: 10px
 }
 
 .contact {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: initial;
 }
 
 
@@ -239,13 +234,101 @@ padding-right: 5px;
 }
 
 .contact div a {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: teal;
-    padding: 0 85px;
-    margin: 7px 0;
-    text-align: left;
-    margin-top: 25px;
+    margin-right: 25px;
+    padding-right: 75px;
+    padding-left: 15px;
 }
+
+/* Media Query for smaller desktop screens and smaller*/
+
+@media screen and (max-width:980px) {
+    header {
+     position: relative;
+     justify-content: center;
+     padding: 0;
+   }
+
+   .work.work-grid-wrapper {
+       grid-template-columns: 2fr 2fr;
+   }
+
+   .contact-info {
+       justify-content: space-between;
+       padding: 0;
+   }
+
+   .contact div a {
+       justify-content: center;
+       padding: 0;
+       text-align: right;
+   }
+}
+
+
+
+/* Media Query for tablets and smaller*/
+
+@media screen and (max-width: 768px) {
+    .work.work-grid-wrapper {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .contact-info {
+        justify-content: space-between;
+        padding: 0;
+    }
+ 
+    .contact div a {
+        justify-content: center;
+        padding: 0;
+        text-align: right;
+        font-size: 20px;
+    }
+
+    .contact h3{
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+}
+
+
+/* Media Query for mobile phones and smaller*/
+
+@media screen and (max-width: 575px) {
+    .work.work-grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+    }
+
+    .contact-info {
+        padding: 0;
+        margin: 50px;
+    }
+ 
+    .contact h3{
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        border-right: unset;
+        border-bottom: 2px solid teal;
+    }
+    .contact div a {
+        justify-content: center;
+        padding: 0;
+        text-align: right;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
 
 
 
